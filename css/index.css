@@ -688,4 +688,14 @@ body {
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    text-align: center;
+    width: 410px;
+  }
+  .footer {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=index.css.map */
