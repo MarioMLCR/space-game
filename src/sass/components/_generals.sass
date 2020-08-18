@@ -1,0 +1,497 @@
+body 
+    background-image: url('../src/images/bggame.png')
+    font-family: 'Saira', Arial, Helvetica, sans-serif
+    overflow-x: hidden
+
+#points 
+    user-select: none
+
+
+.cont-info
+    top: 230px
+    left: 200px
+    position: absolute
+    width: 130px
+    height: 120px
+    background-color: rgba(#171A21  , .9)
+    border: 10px double #2A2F3C
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    #level
+        color: #fff
+        font-weight: 800
+        padding-bottom: 10px
+        border-bottom: 1px solid #2A2F3C
+
+    .lives 
+        padding-top: 10px
+        color: #b83131
+        .fa-heart 
+            margin: 0 5px
+
+
+.counter
+    width: 100px
+    height: 100px
+    background-color: #fff
+.contenedor 
+    position: relative
+    margin: auto 
+    width: 450px
+    height: 450px
+    background-color: rgba(#171A21  , .9)
+    border: 10px double #2A2F3C
+
+    .evil-no
+        display: none
+    .villain
+        width: 40px
+        height: 40px 
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        position: absolute
+        transition: .2s
+        background-color: #b83131
+        border: 2px solid #fff
+        .fas
+            font-size: 20px
+            color: #fff
+            cursor: pointer
+            // transition: .3s
+        
+    .player 
+        width: 50px
+        height: 50px 
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        position: absolute
+        transition: .3s
+        background-color: #FFFFFF
+        border: 4px dotted #A3A3A3
+    
+        .fas
+            font-size: 42px
+            color: #A3A3A3
+            cursor: pointer
+            // transition: .3s
+        
+    .evil-player
+        background-color: #d41010
+        border: 4px dotted #b83131
+        // transition: .3s
+        .fas 
+            color: #b83131
+            // transition: .3s
+
+    .player2
+        width: 15px
+        height: 15px
+        .fas2
+            font-size: 5px
+
+
+
+.pointer 
+    height: 50px
+    margin: 35px auto 20px auto
+    color: white 
+    font-size: 20px
+    text-align: center
+    padding: 5px 0
+
+            
+
+// -----------------------------------------MODALSSS--------------------------------------------------
+
+
+.hidden
+    display: none
+.modal-w
+    z-index: 1000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .8 )
+    .content
+        position: relative
+        z-index: 2000
+        width: 600px 
+        height: 200px 
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0 3px 1px -2px rgba(226, 226, 226, 0.657), 0 2px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+        padding: 20px 30px
+
+        text-align: center
+
+        h3 
+            font-size: 30px
+            color: #171A21
+        .fas 
+            box-shadow: 0 3px 1px -2px rgba(179, 189, 39, 0.657), 0 20px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+            color: #FDCA40
+            margin: 30px 10px
+            font-size: 30px
+            transition: .3s
+            &:hover
+                transform: scale(1.1)
+
+        .buttons
+
+            .btn
+                display: inline-block
+                border-radius: 10px
+                margin: 0 10px
+                line-height: 30px
+                width: 100px
+                cursor: pointer
+                color: #fff
+                background-color: #6B0504
+                transition: .3s
+                &:hover
+                    transform: scale(1.1)
+
+            .next 
+                background-color: #64D039
+
+            .btn-hidden 
+                display: none
+
+
+            .hidden-ultimate
+                display: none
+            .ultimate-level
+                background-color: #64D039
+                display: inline-block
+                border-radius: 10px
+                margin: 0 10px
+                line-height: 30px
+                width: 150px
+                cursor: pointer
+                color: #fff
+                transition: .3s
+
+.modal-l
+    z-index: 1000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .8 )
+    .content
+        position: relative
+        z-index: 2000
+        width: 600px 
+        height: 200px 
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0 3px 1px -2px rgba(226, 226, 226, 0.657), 0 2px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+        padding: 20px 30px
+
+        text-align: center
+
+        h3 
+            font-size: 30px
+            color: #171A21
+        .fas1
+            margin: 30px
+            color: #b83131
+            font-size: 30px
+            transition: .3s
+            &:hover
+                transform: scale(1.1)
+
+        .buttons
+            background-color: #b83131
+            margin-top: 20px
+            width: 200px
+            border-radius: 6px
+            margin: auto
+
+            .btn
+                display: inline-block
+                padding: 15px 37px
+                color: #ffffff
+                text-decoration: none
+
+.modal-time
+    z-index: 1000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .8 )
+    .content
+        position: relative
+        z-index: 2000
+        width: 600px 
+        height: 200px 
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0 3px 1px -2px rgba(226, 226, 226, 0.657), 0 2px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+        padding: 20px 30px
+
+        text-align: center
+
+        h3 
+            font-size: 30px
+            color: #171A21
+        .fas1
+            margin: 30px
+            color: #b83131
+            font-size: 30px
+            transition: .3s
+            &:hover
+                transform: scale(1.1)
+
+        .buttons
+            background-color: #b83131
+            margin-top: 20px
+            width: 200px
+            border-radius: 6px
+            margin: auto
+
+            .btn
+                display: inline-block
+                padding: 15px 37px
+                color: #ffffff
+                text-decoration: none
+
+.modal-finish
+    z-index: 1000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .8 )
+    .content
+        position: relative
+        z-index: 2000
+        width: 600px 
+        height: 240px 
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0 3px 1px -2px rgba(226, 226, 226, 0.657), 0 2px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+        padding: 20px 30px
+
+        text-align: center
+
+        h3 
+            font-size: 30px
+            color: #171A21
+        .fas1
+            margin: 30px
+            color: #FDCA40
+            font-size: 30px
+            transition: .3s
+            font-size: 50px
+            &:hover
+                transform: scale(1.1)
+
+        .buttons
+            background-color: #FDCA40
+            margin-top: 20px
+            width: 200px
+            border-radius: 6px
+            margin: auto
+
+            .btn
+                display: inline-block
+                padding: 15px 37px
+                color: #ffffff
+                text-decoration: none
+
+
+.modal-start
+    z-index: 50000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .9)
+    .content
+        position: relative
+        z-index: 2000
+        width: 600px 
+        height: 200px 
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0 3px 1px -2px rgba(226, 226, 226, 0.657), 0 2px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+        padding: 20px 30px
+
+        text-align: center
+
+        h3 
+            margin-top: 20px
+            font-size: 30px
+            color: #171A21
+        .fas 
+            box-shadow: 0 3px 1px -2px rgba(179, 189, 39, 0.657), 0 20px 2px 0 rgba(255, 255, 255, 0.548), 0 1px 5px 0 rgba(255, 255, 255, 0.452)
+            color: #FDCA40
+            margin: 30px 10px
+            font-size: 30px
+            transition: .3s
+            &:hover
+                transform: scale(1.1)
+
+        .buttons
+            margin-top: 40px
+
+            .btn
+                display: inline-block
+                border-radius: 10px
+                margin: 0 10px
+                line-height: 30px
+                width: 100px
+                cursor: pointer
+                color: #fff
+                background-color: #6B0504
+                transition: .3s
+                &:hover
+                    transform: scale(1.1)
+
+            .next 
+                background-color: #64D039
+
+            .btn-hidden 
+                display: none
+
+
+            .hidden-ultimate
+                display: none
+            .ultimate-level
+                background-color: #64D039
+                display: inline-block
+                border-radius: 10px
+                margin: 0 10px
+                line-height: 30px
+                width: 150px
+                cursor: pointer
+                color: #fff
+                transition: .3s
+
+
+.modal-instructions
+    z-index: 50000
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .4s
+    .opacity
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(#000  , .9)
+    .content
+        position: relative
+        z-index: 2000
+        img 
+            border-radius: 5px
+        .close-instructions 
+            color: white
+            position: absolute
+            z-index: 8000
+            top: 10px
+            right: 10px
+            cursor: pointer
+
+
+.redes 
+    FLEX PROPERTIES
+    display: flex
+    flex-direction: column
+    position: fixed
+    top: 14em
+
+    .social
+        width: 40px
+        height: 40px
+        background: 
+        color: #fff
+        margin-bottom: 1px
+        padding-right: 10px
+        border-radius: 0 5px 5px 0
+        text-decoration: none
+        font-size: 20px
+        transition: .3s
+        FLEX PROPERTIES
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    .ws
+        &:hover
+            transition: .3s
+            background: #25d366
+            width: 60px
+            color: white
+    .ig
+        &:hover
+            transition: .3s
+            background: #ffdc80
+            width: 60px
+            color: white
+    .fb
+        &:hover
+            transition: .3s
+            background: #3b5998
+            width: 60px
+            color: white
+
+.footer 
+    font-size: 10px
+    margin-top: 10px
+    color: white
+    text-align: center

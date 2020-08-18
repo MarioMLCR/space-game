@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body style="overflow-y:hidden" style="overflow-x:hidden">
+    <div id="modal-start" class="hidden modal-start">
+        <div class="opacity"></div>
+        <div class="content">
+            <h3>! Hello player ¡</h3>
+            <div class="buttons">
+                <span id="instructions" class="btn vote">Instructions</span>
+                <span id="start-game" class="btn next">Play</span>
+            </div>
+        </div>
+    </div>
+    <div id="modal-instructions" class="hidden">
+        <div class="opacity"></div>
+        <div class="content">
+            <span id="close-instructions" class="close-instructions"> X </span>
+            <img src="src/images/instructions.png" alt="">
+        </div>
+    </div>
+    <div id="modal-w" class="hidden">
+        <div class="opacity"></div>
+        <div class="content">
+            <h3>! Congratulations ¡</h3>
+            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="buttons">
+                <span id="vote" class="btn vote">Vote Game</span>
+                <span id="nextlvl" class="btn next">Next Level</span>
+                <span id="ultimate-level" class="hidden-ultimate">Ultimate Level</span>
+            </div>
+        </div>
+    </div>
+    <div id="modal-finish" class="hidden">
+        <div class="opacity"></div>
+        <div class="content">
+            <h3>! Congratulations ¡</h3>
+            <div><i class="fas fas1 fa-trophy"></i></div>
+            <div class="buttons">
+                <a class="btn" href="">Thanks for playing</a>
+            </div>
+        </div>
+    </div>
+    <div id="modal-l" class="hidden">
+        <div class="opacity"></div>
+        <div class="content">
+            <h3>! Lost yout lives ¡</h3>
+            <div><i class="fas fas1 fa-skull"></i></div>
+            <div class="buttons">
+                <a class="btn" href="">Refresh Game <i class="fas fa-redo-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="modal-time" class="hidden">
+        <div class="opacity"></div>
+        <div class="content">
+            <h3>! Time is over ¡</h3>
+            <div><i class="far fas1 fa-clock"></i></div>
+            <div class="buttons">
+                <a class="btn" href="">Refresh Game <i class="fas fa-redo-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="cont-info">
+        <span id="level" class="">Lvl : 1</span>
+        <div id="lives" class="lives">
+            <i id="live1" class="fas fa-heart live1"></i><i id="live2" class="fas fas2 fa-heart live2"></i><i id="live3" class="fas fa-heart live3"></i>
+        </div>
+    </div>
+    <div class="redes">
+        <a href="https://chatwith.io/s/5f3b191897a39" class="social ws" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/mario_ml_dev?igshid=4npjgy5c26jc" class="social ig" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://es-la.facebook.com/mario.marinleon" target="_blank" class="social fb" ><i class="fab fa-facebook-square"></i></a>
+    </div>
+    <div class="contenedor pointer">
+        <span id="points">Points : 0/30</span>
+        |
+        <span id="ned"></span>
+        <span id="time">Time : </span>
+    </div>
+    <div class="contenedor">
+        <div class="player" id="player">
+            <i id="world" class="fas fa-globe-europe"></i>
+        </div>
+        <div id="villain" class="evil-no evil" id="villain">
+            <i class="fas fa-meteor"></i>
+        </div>
+        <div id="evil2" class="evil-no evil" id="villain">
+            <i class="fas fa-meteor"></i>
+        </div>
+        <div id="evil3" class="evil-no evil" id="villain">
+            <i class="fas fa-meteor"></i>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2020 FloritDev, Mario Andres ML</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
