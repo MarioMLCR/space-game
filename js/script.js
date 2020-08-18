@@ -12,7 +12,7 @@ function addPoints(){
         document.getElementById('player').style.marginTop = randNum + 'px';
         document.getElementById('player').style.marginLeft = randNum2 + 'px';
         // -----WIN-----
-        if(points == 30){
+        if(points >= 30){
             clearInterval(intervalOne);
             document.getElementById('points').innerHTML = `You have reached ${points} points`;
             document.getElementById('player').removeEventListener('click', addPoints);
